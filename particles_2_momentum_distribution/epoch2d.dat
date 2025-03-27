@@ -1,0 +1,7 @@
+ EPOCH2D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742808371.604           
+
+ Loaded 1250000 particles of species "Electron_temp"
+ Loaded 1250000 particles of species "Electron_temp_drift"
+ Loaded 1250000 particles of species "Electron_user"
+Wrote normal ,           0000.sdf at time  0.5602E-16 and iteration       0
+Wrote normal ,           0001.sdf at time  0.1008E-14 and iteration       9

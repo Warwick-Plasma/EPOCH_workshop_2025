@@ -1,0 +1,103 @@
+ EPOCH2D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742811391.769           
+
+Deck state:  1
+
+ Beginning "constant" block
+
+ 	Element cell_size=50.0e-9 handled OK
+ 	Element parts_per_cell=10 handled OK
+
+ Ending "constant" block
+
+ Beginning "control" block
+
+ 	Element nx=10 handled OK
+ 	Element ny=10 handled OK
+ 	Element t_end=300.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=nx * cell_size handled OK
+ 	Element y_min=0 handled OK
+ 	Element y_max=ny * cell_size handled OK
+ 	Element stdout_frequency=100 handled OK
+ 	Element smooth_currents=T handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=periodic handled OK
+ 	Element bc_x_max=periodic handled OK
+ 	Element bc_y_min=periodic handled OK
+ 	Element bc_y_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron handled OK
+ 	Element mass=1.0 handled OK
+ 	Element charge=-1.0 handled OK
+ 	Element npart=parts_per_cell * nx * ny handled OK
+ 	Element density=1.0e28 handled OK
+ 	Element temp_ev=1000 handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end/20 handled OK
+ 	Element temperature=always handled OK
+
+ Ending "output" block
+
+Deck state:  2
+
+ Beginning "constant" block
+
+ 	Element cell_size=50.0e-9 handled OK
+ 	Element parts_per_cell=10 handled OK
+
+ Ending "constant" block
+
+ Beginning "control" block
+
+ 	Element nx=10 handled OK
+ 	Element ny=10 handled OK
+ 	Element t_end=300.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=nx * cell_size handled OK
+ 	Element y_min=0 handled OK
+ 	Element y_max=ny * cell_size handled OK
+ 	Element stdout_frequency=100 handled OK
+ 	Element smooth_currents=T handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=periodic handled OK
+ 	Element bc_x_max=periodic handled OK
+ 	Element bc_y_min=periodic handled OK
+ 	Element bc_y_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron handled OK
+ 	Element mass=1.0 handled OK
+ 	Element charge=-1.0 handled OK
+ 	Element npart=parts_per_cell * nx * ny handled OK
+ 	Element density=1.0e28 handled OK
+ 	Element temp_ev=1000 handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end/20 handled OK
+ 	Element temperature=always handled OK
+
+ Ending "output" block
+
+ Initial conditions complete and valid.

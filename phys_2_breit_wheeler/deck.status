@@ -1,0 +1,155 @@
+ EPOCH1D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742832219.785           
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=500 handled OK
+ 	Element npart=nx * 2500 handled OK
+ 	Element t_end=50.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=25.0e-6 handled OK
+ 	Element stdout_frequency=10 handled OK
+
+ Ending "control" block
+
+ Beginning "qed" block
+
+ 	Element use_qed=T handled OK
+ 	Element produce_photons=T handled OK
+ 	Element photon_energy_min=50 * kev handled OK
+ 	Element produce_pairs=T handled OK
+ 	Element photon_dynamics=T handled OK
+
+ Ending "qed" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element intensity_w_cm2=2.0e23 handled OK
+ 	Element lambda=1.0e-6 handled OK
+
+ Ending "laser" block
+
+ Beginning "species" block
+
+ 	Element name=Photon_Beam handled OK
+ 	Element frac=1 handled OK
+ 	Element rho=if (x gt 20.0e-6, 1.0e10, 0) handled OK
+ 	Element drift_x=-100.0e6 * ev / c handled OK
+ 	Element identify=photon handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Electron handled OK
+ 	Element frac=0 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Positron handled OK
+ 	Element frac=0 handled OK
+ 	Element identify=positron handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end/20 handled OK
+ 	Element ey=always handled OK
+ 	Element number_density=always + species handled OK
+
+ Ending "output" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=500 handled OK
+ 	Element npart=nx * 2500 handled OK
+ 	Element t_end=50.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=25.0e-6 handled OK
+ 	Element stdout_frequency=10 handled OK
+
+ Ending "control" block
+
+ Beginning "qed" block
+
+ 	Element use_qed=T handled OK
+ 	Element produce_photons=T handled OK
+ 	Element photon_energy_min=50 * kev handled OK
+ 	Element produce_pairs=T handled OK
+ 	Element photon_dynamics=T handled OK
+
+ Ending "qed" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element intensity_w_cm2=2.0e23 handled OK
+ 	Element lambda=1.0e-6 handled OK
+
+ Ending "laser" block
+
+ Beginning "species" block
+
+ 	Element name=Photon_Beam handled OK
+ 	Element frac=1 handled OK
+ 	Element rho=if (x gt 20.0e-6, 1.0e10, 0) handled OK
+ 	Element drift_x=-100.0e6 * ev / c handled OK
+ 	Element identify=photon handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Electron handled OK
+ 	Element frac=0 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Positron handled OK
+ 	Element frac=0 handled OK
+ 	Element identify=positron handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end/20 handled OK
+ 	Element ey=always handled OK
+ 	Element number_density=always + species handled OK
+
+ Ending "output" block
+
+ *** WARNING ***
+ No Breit-Wheeler positron species specified.
+ Specify using "identify:breit_wheeler_positron".
+ Using species Positron instead.
+ *** WARNING ***
+ No Breit-Wheeler electron species specified.
+ Specify using "identify:breit_wheeler_electron".
+ Using species Electron instead.
+ Initial conditions complete and valid.

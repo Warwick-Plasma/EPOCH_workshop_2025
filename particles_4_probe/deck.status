@@ -1,0 +1,117 @@
+ EPOCH2D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742811080.311           
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=500 handled OK
+ 	Element ny=500 handled OK
+ 	Element t_end=10.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=25e-6 handled OK
+ 	Element y_min=0 handled OK
+ 	Element y_max=25e-6 handled OK
+ 	Element stdout_frequency=100 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=open handled OK
+ 	Element bc_x_max=open handled OK
+ 	Element bc_y_min=open handled OK
+ 	Element bc_y_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron handled OK
+ 	Element mass=1.0 handled OK
+ 	Element charge=-1.0 handled OK
+ 	Element npart=1e5 handled OK
+ 	Element density=if (x lt 2.0e-6, 1.0e10, 0) handled OK
+ 	Element density=if (y lt 10.0e-6, 0, density(Electron)) handled OK
+ 	Element density=if (y gt 11.0e-6, 0, density(Electron)) handled OK
+ 	Element temp_ev=1e3 handled OK
+ 	Element drift_x=5.0e-22 handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end handled OK
+ 	Element particle_probes=always handled OK
+
+ Ending "output" block
+
+ Beginning "probe" block
+
+ 	Element name=Electron_probe handled OK
+ 	Element point=(4.0e-6, 0.0) handled OK
+ 	Element normal=(1.0, 0.0) handled OK
+ 	Element ek_min=0.0 handled OK
+ 	Element ek_max=-1.0 handled OK
+ 	Element include_species=Electron handled OK
+ 	Element dumpmask=always handled OK
+
+ Ending "probe" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=500 handled OK
+ 	Element ny=500 handled OK
+ 	Element t_end=10.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=25e-6 handled OK
+ 	Element y_min=0 handled OK
+ 	Element y_max=25e-6 handled OK
+ 	Element stdout_frequency=100 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=open handled OK
+ 	Element bc_x_max=open handled OK
+ 	Element bc_y_min=open handled OK
+ 	Element bc_y_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron handled OK
+ 	Element mass=1.0 handled OK
+ 	Element charge=-1.0 handled OK
+ 	Element npart=1e5 handled OK
+ 	Element density=if (x lt 2.0e-6, 1.0e10, 0) handled OK
+ 	Element density=if (y lt 10.0e-6, 0, density(Electron)) handled OK
+ 	Element density=if (y gt 11.0e-6, 0, density(Electron)) handled OK
+ 	Element temp_ev=1e3 handled OK
+ 	Element drift_x=5.0e-22 handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end handled OK
+ 	Element particle_probes=always handled OK
+
+ Ending "output" block
+
+ Beginning "probe" block
+
+ 	Element name=Electron_probe handled OK
+ 	Element point=(4.0e-6, 0.0) handled OK
+ 	Element normal=(1.0, 0.0) handled OK
+ 	Element ek_min=0.0 handled OK
+ 	Element ek_max=-1.0 handled OK
+ 	Element include_species=Electron handled OK
+ 	Element dumpmask=always handled OK
+
+ Ending "probe" block
+
+ Initial conditions complete and valid.

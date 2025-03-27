@@ -1,0 +1,143 @@
+begin:control
+    nx = 1000
+    ny = 1000
+    t_end = 150e-15
+    x_min = 0
+    x_max = 20e-6
+    y_min = -10e-6
+    y_max = 10e-6
+    stdout_frequency = 10
+    smooth_currents = T
+end:control
+
+begin:boundaries
+    bc_x_min = simple_laser
+    bc_x_max = open
+    bc_y_min = open
+    bc_y_max = open
+end:boundaries
+
+begin:qed
+    use_qed = T
+    produce_photons = T
+    photon_energy_min = 500 * kev
+    produce_pairs = F
+    photon_dynamics = T
+end:qed
+
+begin:constant
+    I_fwhm = 5.0e-6          # FWHM of laser intensity
+    I_peak_Wcm2 = 1.0e22     # 0.5 * eps0 * c * E_peak^2
+    las_lambda = 1.0e-6      # Laser wavelength
+    foc_dist = 10.0e-6       # Boundary to focal point distance
+    t_fwhm = 40.0e-15        # Temporal FWHM
+end:constant
+
+begin:constant
+    las_k = 2.0 * pi / las_lambda    
+    w0 = I_fwhm / sqrt(2.0 * loge(2.0))                  # Beam Waist
+    ray_rang = pi * w0^2 / las_lambda                    # Rayleigh range
+    w_boundary = w0 * sqrt(1.0 + (foc_dist/ray_rang)^2)  # Waist on boundary
+    I_boundary = I_peak_Wcm2 * (w0 / w_boundary)^2       # Intens. on boundary
+    rad_curve = foc_dist * (1.0 + (ray_rang/foc_dist)^2) # Boundary curv. rad.
+    gouy = atan(-foc_dist/rad_curve)                     # Boundary Gouy shift
+    
+    w_t = t_fwhm / sqrt(2*loge(2))
+    t_hw01m = 0.5 * t_fwhm * sqrt(loge(10)/loge(2))
+end:constant
+
+begin:laser
+    boundary = x_min
+    intensity_w_cm2 = I_boundary
+    lambda = las_lambda
+    phase = las_k * y^2 / (2.0 * rad_curve) - gouy
+    profile = gauss(y, 0, w_boundary)
+    t_profile = gauss(time,t_hw01m,w_t)
+end:laser
+
+begin:constant
+    circ_rad = 2.0e-6
+    ni0 = 6.0e28
+    ne0 = ni0 * 6
+    plas_scale = 1.0e-6
+end:constant
+
+begin:species
+    name = Electron
+    
+    # Front circle
+    density = if ((x-10.0e-6)^2 + y^2 lt circ_rad^2, \
+                   ne0 * exp((x-10e-6)/plas_scale), \
+                   0)
+    density = if(x gt 10.0e-6, 0, density(Electron))
+    
+    # Rear triangle
+    density = if ((x gt 10.0e-6) and abs(y) lt -(x-12.0e-6), \
+                  ne0, \
+                  density(Electron))
+                  
+    temp_ev = 1.0e3
+    
+    npart = 2.5e6
+    
+    identify:electron    
+end:species
+
+begin:species
+    name = C
+    mass = 22033
+    charge = 6
+
+    density = density(Electron) / 6
+    temp_ev = 1.0e3
+    
+    npart = 1e6   
+end:species
+
+begin:species
+    name = Photon
+    npart = 0
+    identify:photon
+end:species
+
+begin:output
+    name = o1
+    dt_snapshot = t_end/20
+    poynt_flux = always
+    ex = always
+    ey = always
+    ez = always
+    number_density = always + species
+    temperature = always + species
+    particle_probes = always
+end:output
+
+begin:probe
+   name = Electron_probe
+   point = (12.0e-6, 0.0)
+   normal = (1.0, 0.0)
+   ek_min = 100 * kev
+   ek_max = -1.0
+   include_species:Electron
+   dumpmask = always
+end:probe
+
+begin:probe
+   name = Carbon_probe
+   point = (12.0e-6, 0.0)
+   normal = (1.0, 0.0)
+   ek_min = 0.0
+   ek_max = -1.0
+   include_species:C
+   dumpmask = always
+end:probe
+
+begin:probe
+   name = Photon_probe
+   point = (12.0e-6, 0.0)
+   normal = (1.0, 0.0)
+   ek_min = 0.0
+   ek_max = -1.0
+   include_species:Photon
+   dumpmask = always
+end:probe

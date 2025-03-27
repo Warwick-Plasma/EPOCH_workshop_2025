@@ -1,0 +1,129 @@
+ EPOCH2D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742580608.451           
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=800 handled OK
+ 	Element ny=400 handled OK
+ 	Element t_end=100e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=20e-6 handled OK
+ 	Element y_min=-5e-6 handled OK
+ 	Element y_max=5e-6 handled OK
+ 	Element stdout_frequency=100 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=open handled OK
+ 	Element bc_y_min=open handled OK
+ 	Element bc_y_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element I_fwhm=2.0e-6 handled OK
+ 	Element I_peak_Wcm2=1.0e15 handled OK
+ 	Element las_lambda=1.0e-6 handled OK
+ 	Element foc_dist=10.0e-6 handled OK
+
+ Ending "constant" block
+
+ Beginning "constant" block
+
+ 	Element las_k=2.0 * pi / las_lambda handled OK
+ 	Element w0=I_fwhm / sqrt(2.0 * loge(2.0)) handled OK
+ 	Element ray_rang=pi * w0^2 / las_lambda handled OK
+ 	Element w_boundary=w0 * sqrt(1.0 + (foc_dist/ray_rang)^2) handled OK
+ 	Element I_boundary=I_peak_Wcm2 * (w0 / w_boundary)^2 handled OK
+ 	Element rad_curve=foc_dist * (1.0 + (ray_rang/foc_dist)^2) handled OK
+ 	Element gouy=atan(-foc_dist/rad_curve) handled OK
+
+ Ending "constant" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element intensity_w_cm2=I_boundary handled OK
+ 	Element lambda=las_lambda handled OK
+ 	Element phase=las_k * y^2 / (2.0 * rad_curve) - gouy handled OK
+ 	Element profile=gauss(y, 0, w_boundary) handled OK
+
+ Ending "laser" block
+
+ Beginning "output" block
+
+ 	Element name=o1 handled OK
+ 	Element dt_snapshot=10 * femto handled OK
+ 	Element poynt_flux=always handled OK
+
+ Ending "output" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=800 handled OK
+ 	Element ny=400 handled OK
+ 	Element t_end=100e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=20e-6 handled OK
+ 	Element y_min=-5e-6 handled OK
+ 	Element y_max=5e-6 handled OK
+ 	Element stdout_frequency=100 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=open handled OK
+ 	Element bc_y_min=open handled OK
+ 	Element bc_y_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element I_fwhm=2.0e-6 handled OK
+ 	Element I_peak_Wcm2=1.0e15 handled OK
+ 	Element las_lambda=1.0e-6 handled OK
+ 	Element foc_dist=10.0e-6 handled OK
+
+ Ending "constant" block
+
+ Beginning "constant" block
+
+ 	Element las_k=2.0 * pi / las_lambda handled OK
+ 	Element w0=I_fwhm / sqrt(2.0 * loge(2.0)) handled OK
+ 	Element ray_rang=pi * w0^2 / las_lambda handled OK
+ 	Element w_boundary=w0 * sqrt(1.0 + (foc_dist/ray_rang)^2) handled OK
+ 	Element I_boundary=I_peak_Wcm2 * (w0 / w_boundary)^2 handled OK
+ 	Element rad_curve=foc_dist * (1.0 + (ray_rang/foc_dist)^2) handled OK
+ 	Element gouy=atan(-foc_dist/rad_curve) handled OK
+
+ Ending "constant" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element intensity_w_cm2=I_boundary handled OK
+ 	Element lambda=las_lambda handled OK
+ 	Element phase=las_k * y^2 / (2.0 * rad_curve) - gouy handled OK
+ 	Element profile=gauss(y, 0, w_boundary) handled OK
+
+ Ending "laser" block
+
+ Beginning "output" block
+
+ 	Element name=o1 handled OK
+ 	Element dt_snapshot=10 * femto handled OK
+ 	Element poynt_flux=always handled OK
+
+ Ending "output" block
+
+ Initial conditions complete and valid.

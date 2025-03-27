@@ -1,0 +1,25 @@
+ EPOCH1D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742832314.253           
+
+ Loaded 62500 particles of species "Electron_cold"
+ Loaded 62500 particles of species "Electron_hot"
+Wrote normal ,           0000.sdf at time  0.7922E-16 and iteration       0
+Wrote normal ,           0001.sdf at time  0.1505E-13 and iteration      95
+Wrote normal ,           0002.sdf at time  0.3010E-13 and iteration     190
+Wrote normal ,           0003.sdf at time  0.4516E-13 and iteration     285
+Wrote normal ,           0004.sdf at time  0.6005E-13 and iteration     379
+Wrote normal ,           0005.sdf at time  0.7510E-13 and iteration     474
+Wrote normal ,           0006.sdf at time  0.9015E-13 and iteration     569
+Wrote normal ,           0007.sdf at time  0.1050E-12 and iteration     663
+Wrote normal ,           0008.sdf at time  0.1201E-12 and iteration     758
+Wrote normal ,           0009.sdf at time  0.1352E-12 and iteration     853
+Wrote normal ,           0010.sdf at time  0.1500E-12 and iteration     947
+Wrote normal ,           0011.sdf at time  0.1651E-12 and iteration    1042
+Wrote normal ,           0012.sdf at time  0.1801E-12 and iteration    1137
+Wrote normal ,           0013.sdf at time  0.1950E-12 and iteration    1231
+Wrote normal ,           0014.sdf at time  0.2101E-12 and iteration    1326
+Wrote normal ,           0015.sdf at time  0.2251E-12 and iteration    1421
+Wrote normal ,           0016.sdf at time  0.2400E-12 and iteration    1515
+Wrote normal ,           0017.sdf at time  0.2551E-12 and iteration    1610
+Wrote normal ,           0018.sdf at time  0.2701E-12 and iteration    1705
+Wrote normal ,           0019.sdf at time  0.2850E-12 and iteration    1799
+Wrote normal ,           0020.sdf at time  0.3001E-12 and iteration    1894

@@ -1,0 +1,105 @@
+ EPOCH2D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742580477.190           
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=700 handled OK
+ 	Element ny=400 handled OK
+ 	Element t_end=100e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=35e-6 handled OK
+ 	Element y_min=-10e-6 handled OK
+ 	Element y_max=10e-6 handled OK
+ 	Element stdout_frequency=100 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=open handled OK
+ 	Element bc_y_min=open handled OK
+ 	Element bc_y_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element t_fwhm=40.0e-15 handled OK
+ 	Element y_fwhm=2.0e-6 handled OK
+ 	Element w_t=t_fwhm / sqrt(2*loge(2)) handled OK
+ 	Element w_y=y_fwhm / sqrt(2*loge(2)) handled OK
+ 	Element t_hw01m=0.5 * t_fwhm * sqrt(loge(10)/loge(2)) handled OK
+
+ Ending "constant" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element intensity_w_cm2=1.0e18 handled OK
+ 	Element lambda=1.0e-6 handled OK
+ 	Element profile=gauss(y,0,w_y) handled OK
+ 	Element t_profile=gauss(time,t_hw01m,w_t) handled OK
+
+ Ending "laser" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=10 * femto handled OK
+ 	Element poynt_flux=always handled OK
+
+ Ending "output" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=700 handled OK
+ 	Element ny=400 handled OK
+ 	Element t_end=100e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=35e-6 handled OK
+ 	Element y_min=-10e-6 handled OK
+ 	Element y_max=10e-6 handled OK
+ 	Element stdout_frequency=100 handled OK
+
+ Ending "control" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=simple_laser handled OK
+ 	Element bc_x_max=open handled OK
+ 	Element bc_y_min=open handled OK
+ 	Element bc_y_max=open handled OK
+
+ Ending "boundaries" block
+
+ Beginning "constant" block
+
+ 	Element t_fwhm=40.0e-15 handled OK
+ 	Element y_fwhm=2.0e-6 handled OK
+ 	Element w_t=t_fwhm / sqrt(2*loge(2)) handled OK
+ 	Element w_y=y_fwhm / sqrt(2*loge(2)) handled OK
+ 	Element t_hw01m=0.5 * t_fwhm * sqrt(loge(10)/loge(2)) handled OK
+
+ Ending "constant" block
+
+ Beginning "laser" block
+
+ 	Element boundary=x_min handled OK
+ 	Element intensity_w_cm2=1.0e18 handled OK
+ 	Element lambda=1.0e-6 handled OK
+ 	Element profile=gauss(y,0,w_y) handled OK
+ 	Element t_profile=gauss(time,t_hw01m,w_t) handled OK
+
+ Ending "laser" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=10 * femto handled OK
+ 	Element poynt_flux=always handled OK
+
+ Ending "output" block
+
+ Initial conditions complete and valid.

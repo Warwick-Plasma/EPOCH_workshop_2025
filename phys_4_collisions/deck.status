@@ -1,0 +1,123 @@
+ EPOCH1D v4.19.3   v4.19.3-50-gfda5fac1-dirty 1742832314.253           
+
+Deck state:  1
+
+ Beginning "control" block
+
+ 	Element nx=500 handled OK
+ 	Element npart=nx * 250 handled OK
+ 	Element t_end=300.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=25.0e-6 handled OK
+ 	Element stdout_frequency=10 handled OK
+
+ Ending "control" block
+
+ Beginning "collisions" block
+
+ 	Element use_collisions=T handled OK
+ 	Element use_nanbu=T handled OK
+ 	Element coulomb_log=auto handled OK
+ 	Element collide=all handled OK
+ 	Element coll_n_step=10 handled OK
+
+ Ending "collisions" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=periodic handled OK
+ 	Element bc_x_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron_cold handled OK
+ 	Element frac=0.5 handled OK
+ 	Element rho=1.0e28 handled OK
+ 	Element temp_ev=500 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Electron_hot handled OK
+ 	Element frac=0.5 handled OK
+ 	Element rho=1.0e28 handled OK
+ 	Element temp_ev=1.0e3 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end/20 handled OK
+ 	Element px=always handled OK
+ 	Element py=always handled OK
+ 	Element pz=always handled OK
+ 	Element weight=always handled OK
+
+ Ending "output" block
+
+Deck state:  2
+
+ Beginning "control" block
+
+ 	Element nx=500 handled OK
+ 	Element npart=nx * 250 handled OK
+ 	Element t_end=300.0e-15 handled OK
+ 	Element x_min=0 handled OK
+ 	Element x_max=25.0e-6 handled OK
+ 	Element stdout_frequency=10 handled OK
+
+ Ending "control" block
+
+ Beginning "collisions" block
+
+ 	Element use_collisions=T handled OK
+ 	Element use_nanbu=T handled OK
+ 	Element coulomb_log=auto handled OK
+ 	Element collide=all handled OK
+ 	Element coll_n_step=10 handled OK
+
+ Ending "collisions" block
+
+ Beginning "boundaries" block
+
+ 	Element bc_x_min=periodic handled OK
+ 	Element bc_x_max=periodic handled OK
+
+ Ending "boundaries" block
+
+ Beginning "species" block
+
+ 	Element name=Electron_cold handled OK
+ 	Element frac=0.5 handled OK
+ 	Element rho=1.0e28 handled OK
+ 	Element temp_ev=500 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "species" block
+
+ 	Element name=Electron_hot handled OK
+ 	Element frac=0.5 handled OK
+ 	Element rho=1.0e28 handled OK
+ 	Element temp_ev=1.0e3 handled OK
+ 	Element identify=electron handled OK
+
+ Ending "species" block
+
+ Beginning "output" block
+
+ 	Element dt_snapshot=t_end/20 handled OK
+ 	Element px=always handled OK
+ 	Element py=always handled OK
+ 	Element pz=always handled OK
+ 	Element weight=always handled OK
+
+ Ending "output" block
+
+ Initial conditions complete and valid.
